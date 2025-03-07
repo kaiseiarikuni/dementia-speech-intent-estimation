@@ -10,5 +10,4 @@ This repository contains data, prompts, and scripts used in the study "Speech In
 ## Repository Contents
 - `prompts/`: Examples of GPT-4o prompts.
 - `data/`: Example data used for evaluation (to be added).
-- `scripts/`: Scripts for training and evaluation (to be added).
-Details on prompts, evaluation scripts, and results will be updated soon.
+- `scripts/`: Scripts for training and evaluation .
