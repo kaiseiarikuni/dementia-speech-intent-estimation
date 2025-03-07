@@ -1,1 +1,42 @@
+# GPT-4o Prompt Examples
 
+This folder contains prompts used for generating synthetic training data for dementia speech intent classification.
+
+## 1. 元データを参照しないプロンプト
+参考文献[1]に記載されている注意すべき発話の基準を基にプロンプトを設計した。詳細は以下のページを参照。  
+- **『帰宅願望/不安』①（参考文献[1], P146）**  
+- **『自己否定/活動拒否』②（参考文献[1], P152）**  
+- **『不満/攻撃的な言動』③（参考文献[1], P176）**  
+
+### **作成例**
+#### **帰宅願望（Desire to Go Home）**
+家に帰りたいんだ。昔のあの家に戻って、また一緒に暮らしたいんだ。
+#### **不安（Anxiety/Fear）**
+頭が混乱してて、どうしたらいいのか分からない。
+#### **自己否定（Self-Denial）**
+私はもう何の役にも立たないよ。
+#### **活動拒否（Activity Refusal）**
+もうそのゲームもやりたくない。楽しくないんだ。
+#### **不満（Dissatisfaction）**
+なんでこんなに不便なんだよ！
+---
+
+## **2. 元データを参照したプロンプト**
+元データを参照しないプロンプトで生成したデータを学習させたモデルを、テストデータで評価した際に発生した誤分類を基に作成した。以下の手順でプロンプトを設計した：
+
+### **1. 誤分類例の抽出**
+テストデータにおける誤分類例を分析し、元データに特有の固有表現や短いフレーズが誤分類の原因となっていることを確認した。
+
+### **2. 誤分類例の説明**
+誤分類例に含まれる文脈や表現をGPT-4oに説明し、これを反映したプロンプトを作成した。
+
+---
+
+## **Note on Data Availability**
+Due to copyright and privacy concerns, the original dataset used in this study cannot be made publicly available.  
+
+If you require further details or advice beyond what is provided in this repository, please feel free to contact us individually.  
+**Please note that we may not be able to respond to all inquiries.**  
+
+For inquiries, please contact:  
+**(mailto:kaisei_0418@icloud.com)**
